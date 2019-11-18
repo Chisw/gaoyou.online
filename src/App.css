@@ -6,6 +6,12 @@
 @import "~tailwindcss/components.css";
 @import "~tailwindcss/utilities.css";
 
-html, body {
-  background-color: #1a202c;
+*::selection {
+  color: #fff;
+  background-color: #2d3748;
+}
+
+html,
+body {
+  background-color: #2d3748;
 }
