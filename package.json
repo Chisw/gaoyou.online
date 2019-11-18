@@ -2,6 +2,7 @@
   "name": "hometown",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chisw.github.io/docs",
   "dependencies": {
     "@babel/core": "7.6.0",
     "@babel/helper-create-regexp-features-plugin": "^7.7.2",
