@@ -1,18 +1,23 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Layout from './components/layout'
-import Center from './components/layout/Center'
-
+import HomePage from './components/pages/HomePage'
 import './App.css'
 
 const App: React.FC = () => {
   return (
-    <div>
+
+    <Router>
       <Layout>
-        <Center>
-          a
-        </Center>
+        <Switch>
+
+          <Route exact path="/" component={HomePage} />
+
+          {/* <Route component={NotFound} /> */}
+
+        </Switch>
       </Layout>
-    </div>
+    </Router>
   )
 }
 
