@@ -1,10 +1,17 @@
+/* Blueprint */
 @import "~normalize.css";
 @import "~@blueprintjs/core/lib/css/blueprint.css";
 @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
 
+/* Tailwind */
 @import "~tailwindcss/base.css";
 @import "~tailwindcss/components.css";
 @import "~tailwindcss/utilities.css";
+
+/* Hometown */
+@import "./htc.css";
+@import "./tailwind.ex.css";
+/* @import "./test.css"; */
 
 *::selection {
   color: #fff;
@@ -16,21 +23,3 @@ body {
   background-color: #2d3748;
 }
 
-.trbl-0 {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 1040px) {
-  .htc-center {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .htc-post {
-    width: 40%;
-  }
-}
