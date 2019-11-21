@@ -1,8 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Layout from './components/layout'
-import HomePage from './components/pages/HomePage'
 import './css/css.css'
+
+import HomePage from './components/pages/HomePage'
+import PostPage from './components/pages/PostPage'
+import NotFound from './components/pages/NotFound'
 
 const App: React.FC = () => {
   return (
@@ -12,13 +15,22 @@ const App: React.FC = () => {
         <Switch>
 
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/:postId" component={PostPage} />
 
-          {/* <Route component={NotFound} /> */}
+          <Route component={NotFound} />
 
         </Switch>
       </Layout>
     </Router>
   )
 }
+
+/*
+
+ HOME: scan, filter(age: 1900, ..., 2000, unknown)
+ USER: avatar, name, sex, age, description, isTrue, postList
+ UPLOAD: cut, resize
+ 
+ */
 
 export default App

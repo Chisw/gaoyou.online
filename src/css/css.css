@@ -16,6 +16,7 @@
 *::selection {
   color: #fff;
   background-color: #2d3748;
+  outline: none;
 }
 
 html,
@@ -23,3 +24,6 @@ body {
   background-color: #2d3748;
 }
 
+a {
+  text-decoration: none !important;
+}

@@ -15,3 +15,8 @@
 .tst-200 {
   transition: all 200ms;
 }
+
+/*  */
+.hover-bright:hover {
+  filter: brightness(1.1)
+}

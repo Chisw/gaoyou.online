@@ -7,6 +7,7 @@ module.exports = {
         '1000px': '1000px',
       },
       minHeight: {
+        '100px': '100px',
         '300px': '300px',
       },
       backgroundColor: {
