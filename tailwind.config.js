@@ -3,6 +3,10 @@ module.exports = {
     extend: {
       width: {
         '200px': '200px',
+        '360px': '360px',
+        '400px': '400px',
+        '600px': '600px',
+        '640px': '640px',
         '1000px': '1000px',
       },
       minHeight: {

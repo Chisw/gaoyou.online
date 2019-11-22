@@ -11,21 +11,34 @@
 }
 
 
-
-
 @media screen and (max-width: 1040px) {
   .htc-center {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
+
 
 @media screen and (max-width: 768px) {
   .htc-post-list {
     column-count: 3;
+    margin: 0 -4px ;
+  }
+
+  .htc-post-card {
+    margin: 0 4px 8px 4px;
+  }
+
+  .htc-post-page .page-main {
+    width: 100%;
+  }
+
+  .htc-post-page .page-side {
+    display: none;
   }
 }
+
 
 @media screen and (max-width: 640px) {
   .htc-post-list {

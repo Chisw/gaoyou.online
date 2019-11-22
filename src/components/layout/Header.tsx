@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 export default function Header() {
   return (
     <div className="h-12 bg-gray-800 shadow-lg">
-      <Center className="h-full flex">
+      <Center className="h-full flex ">
         <div className="w-20 h-full flex items-center">
           <NavLink to="/">
             <img src={logo} alt="logo" className="w-20" />

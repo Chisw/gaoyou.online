@@ -35,14 +35,6 @@ export default function PostCard(props: PostCardProps) {
           <p className="truncate text-xs text-gray-100">{title}</p>
           <p className="word-break text-xs text-gray-600 mt-1">{description}</p>
         </div>
-        {/* <div className="card-user p-2 flex items-center flex-grow">
-          <img
-            className="w-4 h-4 rounded-full"
-            src="http://jisuowei.com/i/img/avatar.jpg"
-          />
-          <span className="ml-1 text-xs text-gray-400">Chisw</span>
-          <span className="ml-1 text-xs text-gray-400 text-right flex-grow">2019-11-12</span>
-        </div> */}
         <div className="card-info px-2 pb-2 flex items-center text-gray-600 text-xs">
           <div className="flex-grow">
             <Icon iconSize={12} icon="thumbs-up" /> 11
