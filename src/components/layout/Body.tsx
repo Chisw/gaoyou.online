@@ -17,7 +17,7 @@ export default function Body(props: BodyProps) {
   } = props
 
   return (
-    <div className={`htc-body relative py-4 w-full min-h-300 bg-gray-900 ${className}`}>
+    <div className={`htc-body relative py-4 w-full min-h-300px bg-gray-900 ${className}`}>
       <Center>
         {children}
       </Center>

@@ -3,12 +3,13 @@ module.exports = {
     extend: {
       width: {
         '200px': '200px',
-        '250px': '238px',
         '1000px': '1000px',
       },
       minHeight: {
         '100px': '100px',
+        '200px': '200px',
         '300px': '300px',
+        '400px': '400px',
       },
       backgroundColor: {
         'black-500': 'rgba(0,0,0, .5)',

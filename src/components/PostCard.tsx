@@ -24,7 +24,7 @@ export default function PostCard(props: PostCardProps) {
   } = props
 
   return (
-    <NavLink to={`/${id}`}>
+    <NavLink to={`/post/${id}`}>
       <div
         className="htc-post-card mx-2 mb-4 rounded overflow-hidden bg-gray-800 shadow cursor-pointer hover:shadow-xl select-none tst-200 hover-bright"
       >

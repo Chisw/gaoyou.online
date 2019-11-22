@@ -9,7 +9,7 @@ export default function PostPage(props: PostPageProps) {
 
   return (
     <Body>
-      PostId: {props.match.params.postId}
+      PostId: {props.match.params.id}
     </Body>
   )
 }

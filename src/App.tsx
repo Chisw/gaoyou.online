@@ -15,7 +15,7 @@ const App: React.FC = () => {
         <Switch>
 
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/:postId" component={PostPage} />
+          <Route exact path="/post/:id" component={PostPage} />
 
           <Route component={NotFound} />
 
