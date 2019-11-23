@@ -20,3 +20,7 @@
 .hover-bright:hover {
   filter: brightness(1.1)
 }
+
+.hover-higher:hover {
+  transform: translateY(-4px);
+}

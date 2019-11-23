@@ -3,7 +3,7 @@ import Body from '../layout/Body'
 import { IPost } from '../../ts/types'
 import API from '../../api'
 import { emptyPost } from '../../ts/util'
-import { ButtonGroup, Button, Icon } from '@blueprintjs/core'
+import { ButtonGroup, Button, Icon, TextArea } from '@blueprintjs/core'
 
 interface PostPageProps {
   match: any
@@ -57,10 +57,63 @@ export default function PostPage(props: PostPageProps) {
               <span className="ml-1 text-xs text-gray-600 text-right flex-grow">上传于 2019-11-12 15:36</span>
             </div>
           </div>
+
+          <div className="mt-5 p-4 bg-gray-800 rounded overflow-hidden shadow-lg">
+            <TextArea
+              fill
+              growVertically
+              rows={3}
+              className="resize-none"
+              placeholder="留下你精彩的评论吧 ^_^"
+
+            />
+            <div className="flex mt-3">
+              <div className="flex-grow"></div>
+              <div>
+                <Button
+                  intent="primary"
+                  className="w-20"
+                >
+                  评论
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-5">
+            <div className="mb-4 text-gray-600 text-sm"><Icon icon="comment" /> 3 条评论</div>
+            {
+              [1,2,3].map(item => {
+                return (
+                  <div className="mb-4">
+                    <div className="flex items-center mb-2 text-xs">
+                      <img
+                        alt="avatar"
+                        className="w-4 h-4 rounded-full"
+                        src="http://jisuowei.com/i/img/avatar.jpg"
+                      />
+                      <span className="ml-1 flex-grow text-gray-400">
+                        Chisw
+                      </span> 
+                      <span className="text-gray-700">
+                        2019-11-23 23:09
+                      </span>
+                    </div>
+                    <div className="p-3 flex-grow bg-gray-800 rounded-lg" style={{ borderTopLeftRadius: 0 }}>
+                      <div className="text-xs text-gray-300">
+                        哇，好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久以前的照片哦
+                      </div>
+                    </div>
+                  </div>
+                )
+              })
+            }
+          </div>
+
         </div>
 
-        <div className="page-side w-360px pl-4">
-          <div className="side-map">
+        <div className="page-side w-360px pl-5">
+          <div className="side-map shadow-lg">
             <h4 className="text-gray-700"><Icon icon="map-marker" /> 地图上的位置</h4>
             <div className="mt-2 w-full min-h-200px bg-gray-500 rounded"></div>
           </div>

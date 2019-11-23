@@ -26,7 +26,7 @@ export default function PostCard(props: PostCardProps) {
   return (
     <NavLink to={`/post/${id}`}>
       <div
-        className="htc-post-card mx-2 mb-4 rounded overflow-hidden bg-gray-800 shadow cursor-pointer hover:shadow-xl select-none tst-200 hover-bright"
+        className="htc-post-card relative mx-2 mb-4 rounded overflow-hidden bg-gray-800 shadow cursor-pointer hover:shadow-xl select-none tst-200 hover-bright hover-higher"
       >
         <div className="card-thumbnail">
           <img className="min-h-100px" src={url} alt={title} />
