@@ -10,7 +10,6 @@
   box-sizing: border-box;
 }
 
-
 @media screen and (max-width: 1040px) {
   .htc-center {
     width: 100%;
@@ -23,7 +22,7 @@
 @media screen and (max-width: 768px) {
   .htc-post-list {
     column-count: 3;
-    margin: 0 -4px ;
+    margin: 0 -4px;
   }
 
   .htc-post-card {

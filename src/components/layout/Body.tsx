@@ -1,5 +1,4 @@
 import React from 'react'
-import Center from './Center'
 import CoverSpinner from '../overlay/CoverSpinner'
 
 interface BodyProps {
@@ -17,10 +16,10 @@ export default function Body(props: BodyProps) {
   } = props
 
   return (
-    <div className={`htc-body relative py-8 w-full min-h-300px bg-gray-900 ${className}`}>
-      <Center>
+    <div className={`htc-body relative pt-12 w-full min-h-200 bg-gray-900 ${className}`}>
+      <div>
         {children}
-      </Center>
+      </div>
       { isLoading && <CoverSpinner /> }
     </div>
   )

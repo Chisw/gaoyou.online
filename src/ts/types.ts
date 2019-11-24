@@ -19,3 +19,12 @@ export type IPostType =
   'school' |
   'graduation' |
   'other'
+
+export interface ICategory {
+  id: string
+  name: string
+  children: {
+    id: string
+    name: string
+  }[]
+}

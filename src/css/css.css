@@ -13,6 +13,15 @@
 @import "./tailwind.ex.css";
 /* @import "./test.css"; */
 
+@font-face {
+  font-family: 'dinc';
+  src: url('../fonts/dinc.woff2');
+}
+
+.font-dinc {
+  font-family: 'dinc';
+}
+
 *::selection {
   color: #fff;
   background-color: #2d3748;
