@@ -36,7 +36,7 @@ export const categories: ICategory[] = [
     id: 'C',
     name: '场所',
     children: [
-      { id: 'C1', name: '校园' },
+      { id: 'C1', name: '学校' },
       { id: 'C2', name: '单位' },
       { id: 'C3', name: '街道' },
       { id: 'C4', name: '公共' }

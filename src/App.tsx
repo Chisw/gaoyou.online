@@ -6,6 +6,7 @@ import './css/css.css'
 
 import HomePage from './components/pages/HomePage'
 import PostPage from './components/pages/PostPage'
+import UploadPage from './components/pages/UploadPage'
 import NotFound from './components/pages/NotFound'
 
 FocusStyleManager.onlyShowFocusOnTabs()
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Switch>
 
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/upload" component={UploadPage} />
           <Route exact path="/post/:id" component={PostPage} />
 
           <Route component={NotFound} />

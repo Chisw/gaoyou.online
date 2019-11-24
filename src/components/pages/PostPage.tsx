@@ -76,7 +76,7 @@ export default function PostPage(props: PostPageProps) {
                     intent="primary"
                     className="w-20"
                   >
-                    评论
+                    发布
                   </Button>
                 </div>
               </div>

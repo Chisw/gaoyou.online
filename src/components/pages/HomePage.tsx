@@ -24,7 +24,7 @@ export default function HomePage() {
     >
       <div
         className="absolute top-0 pt-12 w-full h-200 bg-gray-600 bg-cover bg-center"
-        style={{ backgroundImage: `url(http://q1gbvecrx.bkt.clouddn.com/gaoyou1968.png)` }}
+        style={{ backgroundImage: `url(http://q1gbvecrx.bkt.clouddn.com/gaoyou-1968.png)` }}
       >
         <div
           className="absolute z-0 w-full h-full bottom-0"
@@ -32,14 +32,14 @@ export default function HomePage() {
         />
         <div className="absolute z-10 w-full h-full">
           <Center>
-            <div className="py-6 font-thin text-center text-2xl text-gray-100 text-shadow">
-              已揽藏高邮 <CountUp className="font-dinc text-4xl" start={0} end={2156} duration={2} useEasing={false} /> 张照片
+            <div className="py-10 font-thin text-center text-lg text-gray-100 text-shadow">
+              已揽藏 <CountUp className="font-dinc text-4xl" start={0} end={2156} duration={2} useEasing={false} /> 张照片
             </div>
             <Categories />
           </Center>
         </div>
       </div>
-      <Center className="relative z-10 mt-64 pb-4">
+      <Center className="relative z-10 mt-64 pt-12 pb-4">
         <PostList posts={posts} />
       </Center>
     </Body>
