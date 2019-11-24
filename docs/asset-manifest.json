@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd39a68c.chunk.css",
-    "main.js": "/static/js/main.4b7d391e.chunk.js",
+    "main.css": "/static/css/main.077d4aae.chunk.css",
+    "main.js": "/static/js/main.7402724d.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.8e0ccf1a.js",
-    "static/css/2.cf840d56.chunk.css": "/static/css/2.cf840d56.chunk.css",
-    "static/js/2.68a15600.chunk.js": "/static/js/2.68a15600.chunk.js",
+    "static/css/2.a5c774c7.chunk.css": "/static/css/2.a5c774c7.chunk.css",
+    "static/js/2.0223301c.chunk.js": "/static/js/2.0223301c.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.e9d5e013e4b8273e4e2fdc9002b03627.js": "/precache-manifest.e9d5e013e4b8273e4e2fdc9002b03627.js",
+    "precache-manifest.581f8979eb4a649096f0e63b67ebc095.js": "/precache-manifest.581f8979eb4a649096f0e63b67ebc095.js",
     "service-worker.js": "/service-worker.js",
     "static/media/css.css": "/static/media/icons-20.d1f0f6c1.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.8e0ccf1a.js",
-    "static/css/2.cf840d56.chunk.css",
-    "static/js/2.68a15600.chunk.js",
-    "static/css/main.bd39a68c.chunk.css",
-    "static/js/main.4b7d391e.chunk.js"
+    "static/css/2.a5c774c7.chunk.css",
+    "static/js/2.0223301c.chunk.js",
+    "static/css/main.077d4aae.chunk.css",
+    "static/js/main.7402724d.chunk.js"
   ]
 }
