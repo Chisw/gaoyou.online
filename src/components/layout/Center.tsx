@@ -13,7 +13,7 @@ export default function Center(props: CenterProps) {
   } = props
   
   return (
-    <div className={`htc-center w-1000px mx-auto ${className}`}>
+    <div className={`htc-center relative z-10 w-1000px mx-auto ${className}`}>
       {children}
     </div>
   )

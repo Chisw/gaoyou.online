@@ -31,7 +31,7 @@ export default function Header() {
             <Button minimal icon="menu" onClick={() => { setMenuOpen(true) }} />
             <Menu large>
               <NavLink to="/me">
-                <MenuItem icon="user" text="个人中心" onClick={() => { setMenuOpen(false) }} />
+                <MenuItem icon="user" text="个人主页" onClick={() => { setMenuOpen(false) }} />
               </NavLink>
               <NavLink to="/upload">
                 <MenuItem icon="upload" text="上传照片" onClick={() => { setMenuOpen(false) }} />

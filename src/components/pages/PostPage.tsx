@@ -5,6 +5,7 @@ import API from '../../api'
 import { emptyPost } from '../../ts/util'
 import { ButtonGroup, Button, Icon, TextArea } from '@blueprintjs/core'
 import Center from '../layout/Center'
+import { animateScroll as scroll } from 'react-scroll';
 
 interface PostPageProps {
   match: any
@@ -18,6 +19,7 @@ export default function PostPage(props: PostPageProps) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    scroll.scrollToTop()
     const _post: IPost = API.post.get(postId)[0]
     setTimeout(() => {
       if (_post) {
@@ -87,7 +89,7 @@ export default function PostPage(props: PostPageProps) {
               {
                 [1,2,3].map(item => {
                   return (
-                    <div className="mb-4">
+                    <div className="mb-4" key={item}>
                       <div className="flex items-center mb-2 text-xs">
                         <img
                           alt="avatar"
