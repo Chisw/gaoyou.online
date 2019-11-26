@@ -2,9 +2,19 @@ import React, { useState } from 'react'
 import Center from './Center'
 import logo from '../../images/logo.png'
 import { NavLink } from 'react-router-dom'
-import { Popover, Button, Menu, MenuItem } from '@blueprintjs/core'
+import { Popover, Button, IconName, Icon } from '@blueprintjs/core'
 
 export default function Header() {
+
+  const menus: {
+    icon: IconName
+    text: string
+    url: string
+  }[] = [
+      { icon: 'user', text: '个人主页', url: '/user' },
+      { icon: 'upload', text: '上传照片', url: '/upload' },
+      { icon: 'info-sign', text: '关于', url: '/about' },
+    ]
 
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -20,23 +30,33 @@ export default function Header() {
           </NavLink>
         </div>
         <div className="flex items-center justify-end flex-grow">
-
           <Popover
             minimal
             isOpen={menuOpen}
-            // modifiers={{ offset: 4 }}
             position="bottom-right"
+            className="mt-6"
             onClose={() => { setMenuOpen(false) }}
           >
-            <Button minimal icon="menu" onClick={() => { setMenuOpen(true) }} />
-            <Menu large>
-              <NavLink to="/me">
-                <MenuItem icon="user" text="个人主页" onClick={() => { setMenuOpen(false) }} />
-              </NavLink>
-              <NavLink to="/upload">
-                <MenuItem icon="upload" text="上传照片" onClick={() => { setMenuOpen(false) }} />
-              </NavLink>
-            </Menu>
+            <Button minimal icon="menu" className="relative -mt-6" onClick={() => { setMenuOpen(true) }} />
+            <div className="p-2 w-40 bg-gray-800 rounded">
+              {
+                menus.map(menu => (
+                  <NavLink to={menu.url} key={menu.url}>
+                    <div
+                      className="flex items-center my-1 p-2 text-gray-400 rounded hover:bg-gray-700"
+                      onClick={() => { setMenuOpen(false) }}
+                    >
+                      <div className="mr-2">
+                        <Icon icon={menu.icon} />
+                      </div>
+                      <div>
+                        <span>{menu.text}</span>
+                      </div>
+                    </div>
+                  </NavLink>
+                ))
+              }
+            </div>
           </Popover>
         </div>
       </Center>
