@@ -6,6 +6,7 @@ import './css/css.css'
 
 import HomePage from './components/pages/HomePage'
 import PostPage from './components/pages/PostPage'
+import UserPage from './components/pages/UserPage'
 import UploadPage from './components/pages/UploadPage'
 import AboutPage from './components/pages/AboutPage'
 import NotFound from './components/pages/NotFound'
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Switch>
 
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/user" component={UserPage} />
           <Route exact path="/upload" component={UploadPage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/post/:id" component={PostPage} />

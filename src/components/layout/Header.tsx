@@ -11,7 +11,7 @@ export default function Header() {
     text: string
     url: string
   }[] = [
-      { icon: 'user', text: '个人主页', url: '/user' },
+      { icon: 'user', text: '我的主页', url: '/user' },
       { icon: 'upload', text: '上传照片', url: '/upload' },
       { icon: 'info-sign', text: '关于', url: '/about' },
     ]

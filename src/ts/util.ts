@@ -12,7 +12,6 @@ export const emptyPost: IPost = {
 }
 
 
-
 export const categories: ICategory[] = [
   {
     id: 'A',
@@ -54,11 +53,11 @@ export const categories: ICategory[] = [
   },
   {
     id: 'E',
-    name: '物品',
+    name: '物件',
     children: [
-      { id: 'E1', name: '食品' },
-      { id: 'E2', name: '家庭用品' },
-      { id: 'E3', name: '交通出行' },
+      { id: 'E1', name: '摆件' },
+      { id: 'E2', name: '工具' },
+      { id: 'E3', name: '大件' },
       { id: 'E4', name: '杂类' }
     ]
   },
