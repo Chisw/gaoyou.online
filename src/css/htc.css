@@ -1,15 +1,5 @@
 /* Hometown Components */
 
-.htc-post-list {
-  column-count: 4;
-  column-gap: 0;
-}
-
-.htc-post-card {
-  break-inside: avoid;
-  box-sizing: border-box;
-}
-
 @media screen and (max-width: 1040px) {
   .htc-center {
     width: 100%;
@@ -20,15 +10,6 @@
 
 
 @media screen and (max-width: 768px) {
-  .htc-post-list {
-    column-count: 3;
-    margin: 0 -4px;
-  }
-
-  .htc-post-card {
-    margin: 0 4px 8px 4px;
-  }
-
   .htc-post-page .page-main {
     width: 100%;
   }
@@ -40,7 +21,5 @@
 
 
 @media screen and (max-width: 640px) {
-  .htc-post-list {
-    column-count: 2;
-  }
+
 }

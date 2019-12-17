@@ -1555,6 +1555,13 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
+"@types/gestalt@^0.75.8":
+  version "0.75.8"
+  resolved "https://registry.yarnpkg.com/@types/gestalt/-/gestalt-0.75.8.tgz#34c181e8b5214e7d261173f30cf2d572d713c636"
+  integrity sha512-ZpmGtwuMf11t0y4aYVPiAy/eyp7shSDujMeSEGST1nKiiL6trOGN8J9lIYlGby8GHYTLSMF7D8+1rstVnyKb8w==
+  dependencies:
+    "@types/react" "*"
+
 "@types/history@*":
   version "4.7.3"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.3.tgz#856c99cdc1551d22c22b18b5402719affec9839a"
@@ -2875,7 +2882,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2:
+classnames@^2.2, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -4776,6 +4783,14 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+gestalt@^0.112.0:
+  version "0.112.0"
+  resolved "https://registry.yarnpkg.com/gestalt/-/gestalt-0.112.0.tgz#bb0acca6cd1899fd5e2e67b895229d4a56a003b5"
+  integrity sha512-MVQvp5x6RAwGq5HxJ2fSTDLuRcQZ3/aT5inP/aehZSzpZSx9ohYXE7TzEflZchBrylC3VDjTfIGeCVzRagqkqA==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
 
 get-caller-file@^1.0.1:
   version "1.0.3"
