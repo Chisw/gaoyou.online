@@ -66,6 +66,7 @@ module.exports = {
 
       }, base, extra, percent),
       minHeight: Object.assign({
+        '50vh': '50vh',
         '200': '25rem',
         '200px': '200px',
         '300px': '300px',

@@ -38,32 +38,3 @@
 .blur-100 {
   filter: blur(10px)
 }
-
-
-
-
-
-
-
-
-
-.border-box {
-  box-sizing: border-box;
-}
-
-.-t-16 {
-  top: -4rem;
-}
-
-.-t-24 {
-  top: -6rem;
-}
-
-.-t-32 {
-  top: -8rem;
-}
-
-/* text */
-.text-shadow {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
-}

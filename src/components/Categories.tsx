@@ -1,29 +1,21 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import { categories } from '../ts/util'
+import { Tag } from 'antd'
 
 export default function Categories() {
   return (
-    <div className="htc-categories mx-auto text-sm">
+    <div className="mt-4 mx-auto text-sm text-center">
       {categories.map(item => (
-        <div className="mb-2 text-center" key={item.id}>
-          <NavLink to="/" className="mx-1 px-1">
-            <span className="text-gray-200 text-shadow hover:opacity-75">
-              {item.name}
-            </span>
-          </NavLink>
-          <span className="text-gray-200">/</span>
+        <Fragment key={item.id}>
           {item.children.map((child, index) => (
-            <span key={index}>
-              {index !== 0 && <span className="text-gray-200">·</span>}
-              <NavLink to="/" className="mx-1 px-1">
-                <span className="text-gray-200 text-shadow hover:opacity-75">
-                  {child.name}
-                </span>
-              </NavLink>
-            </span>
+            <NavLink key={index} to="/" className="m-1 inline-block">
+              <Tag className="text-gray-200" color="blue">
+                {child.name}
+              </Tag>
+            </NavLink>
           ))}
-        </div>
+        </Fragment>
       ))}
     </div>
   )
