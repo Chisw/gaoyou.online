@@ -24,12 +24,13 @@ export default function PostCard(props: PostCardProps) {
   } = props
 
   return (
-    <NavLink to={`/post/${id}`}>
-      <div
-        className="htc-post-card relative rounded overflow-hidden bg-gray-800 shadow cursor-pointer hover:shadow-xl select-none tst-200 hover-bright hover-higher"
+    <>
+      <NavLink
+        to={`/post/${id}`}
+        className="px-2 w-1/4 relative rounded overflow-hidden cursor-pointer select-none transition-all duration-200"
       >
-        <div className="card-thumbnail">
-          <img className="min-h-100px" src={url} alt={title} />
+        <div className="h-40 overflow-hidden">
+          <img className=""  src={url} alt={title} />
         </div>
         <div className="card-text p-2">
           <p className="truncate text-xs text-gray-100">{title}</p>
@@ -49,7 +50,7 @@ export default function PostCard(props: PostCardProps) {
         <div className="hidden">
           {user + date + updateDate + uploadDate + location + description}
         </div>
-      </div>
-    </NavLink>
+      </NavLink>
+    </>
   )
 }

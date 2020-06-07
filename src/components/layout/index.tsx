@@ -13,7 +13,7 @@ export default function Layout(props: LayoutProps) {
   } = props
   
   return (
-    <div className="bp3-dark bg-gray-900">
+    <div>
       <Header />
       {children}
       <Footer />

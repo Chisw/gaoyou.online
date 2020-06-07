@@ -13,12 +13,12 @@ export default function UserPage() {
         <div>
           <div className="flex justify-center pt-6">
             <div className="relative w-16 h-16 rounded-full overflow-hidden shadow">
-              <img className="w-full h-full" src="http://jisuowei.com/i/img/avatar.jpg" alt="avatar" />
+              <img className="w-full h-full" src="https://jisuowei.com/file/avatar.jpg" alt="avatar" />
             </div>
           </div>
           <p className="my-2 text-center text-base"><span>Chisw</span></p>
         </div>
-        <div className="mt-4 text-center bg-gray-800">
+        <div className="mt-4 text-center">
           <Tabs
             large
             className="inline-block"
@@ -30,7 +30,7 @@ export default function UserPage() {
             <Tab id="profile" className="mx-2" title="资料"></Tab>
           </Tabs>
         </div>
-        <div className="p-4 bg-gray-800 border-t border-gray-900">
+        <div className="p-4 border-t border-gray-900">
           <div>
             {activePanel}
           </div>

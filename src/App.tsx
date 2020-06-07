@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { FocusStyleManager } from '@blueprintjs/core'
 import Layout from './components/layout'
-import './css/css.css'
+import './css/index.css'
 
 import HomePage from './components/pages/HomePage'
 import PostPage from './components/pages/PostPage'

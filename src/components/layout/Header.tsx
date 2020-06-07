@@ -1,8 +1,17 @@
 import React, { useState } from 'react'
 import Center from './Center'
 import logo from '../../images/logo.png'
+import logoDark from '../../images/logo-dark.png'
 import { NavLink } from 'react-router-dom'
-import { Popover, Button, IconName, Icon } from '@blueprintjs/core'
+import { IconName, Icon } from '@blueprintjs/core'
+import { throttle } from 'lodash'
+import { Dropdown } from 'antd'
+import { MenuOutlined } from '@ant-design/icons'
+
+const throttleScroll = throttle((setShow: (show: boolean) => void) => {
+  const top = document.documentElement.scrollTop
+  setShow(top > 180)
+}, 100)
 
 export default function Header() {
 
@@ -11,41 +20,32 @@ export default function Header() {
     text: string
     url: string
   }[] = [
-      { icon: 'user', text: '我的主页', url: '/user' },
-      { icon: 'upload', text: '上传照片', url: '/upload' },
-      { icon: 'info-sign', text: '关于', url: '/about' },
-    ]
+    { icon: 'user', text: '我的主页', url: '/user' },
+    { icon: 'upload', text: '上传照片', url: '/upload' },
+    { icon: 'info-sign', text: '关于', url: '/about' },
+  ]
 
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [show, setShow] = useState(false)
+
+  window.addEventListener('scroll', () => throttleScroll(setShow))
 
   return (
     <div
-      className="htc-header fixed z-30 top-0 w-full h-12 bg-gray-800 border-t-4 border-gray-600 shadow-lg-200"
-      style={{ background: 'rgba(45, 55, 72, .96)' }}
+      className={`fixed z-30 top-0 w-full h-16 transition-all duration-200 ${show ? 'bg-white-900 bg-hazy-50 shadow-lg' : ''}`}
     >
-      <Center className="h-full flex ">
-        <div className="w-24 h-full flex items-center hover-bright">
+      <Center className="h-full flex items-center">
+        <div className="w-24 h-full flex items-center hover:opacity-75 transition-all duration-200 cursor-pointer">
           <NavLink to="/">
-            <img src={logo} alt="logo" className="w-24" />
+            <img src={show ? logoDark : logo} alt="logo" className="w-24" />
           </NavLink>
         </div>
         <div className="flex items-center justify-end flex-grow">
-          <Popover
-            minimal
-            isOpen={menuOpen}
-            position="bottom-right"
-            className="mt-6"
-            onClose={() => { setMenuOpen(false) }}
-          >
-            <Button minimal icon="menu" className="relative -mt-6" onClick={() => { setMenuOpen(true) }} />
-            <div className="p-2 w-40 bg-gray-800 rounded">
-              {
-                menus.map(menu => (
+          <Dropdown
+            overlay={(
+              <div className="p-2 w-40 rounded bg-white shadow-lg">
+                {menus.map(menu => (
                   <NavLink to={menu.url} key={menu.url}>
-                    <div
-                      className="flex items-center my-1 p-2 text-gray-400 rounded hover:bg-gray-700"
-                      onClick={() => { setMenuOpen(false) }}
-                    >
+                    <div className="flex items-center p-2 text-gray-600 rounded hover:bg-gray-200 hover:text-blue-500">
                       <div className="mr-2">
                         <Icon icon={menu.icon} />
                       </div>
@@ -54,10 +54,15 @@ export default function Header() {
                       </div>
                     </div>
                   </NavLink>
-                ))
-              }
-            </div>
-          </Popover>
+                ))}
+              </div>
+            )}
+          >
+            <span className="text-white text-lg cursor-pointer">
+              <MenuOutlined />
+            </span>
+          </Dropdown>
+
         </div>
       </Center>
     </div>

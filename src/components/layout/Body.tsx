@@ -16,7 +16,7 @@ export default function Body(props: BodyProps) {
   } = props
 
   return (
-    <div className={`htc-body relative pt-12 w-full min-h-200 bg-gray-900 ${className}`}>
+    <div className={`relative pt-12 w-full min-h-200 ${className}`}>
       <div>
         {children}
       </div>

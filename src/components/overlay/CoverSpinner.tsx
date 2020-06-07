@@ -15,7 +15,7 @@ export default function CoverSpinner(props: CoverSpinnerProps) {
 
   return (
     <div
-      className="htc-cover-spinner absolute z-20 trbl-0 flex justify-center items-center cursor-wait"
+      className="absolute z-20 inset-0 flex justify-center items-center cursor-wait"
       style={{ backgroundColor }}
     >
       <Spinner size={size} />

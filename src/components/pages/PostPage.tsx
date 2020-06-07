@@ -32,10 +32,10 @@ export default function PostPage(props: PostPageProps) {
   return (
     <Body isLoading={loading}>
       <Center>
-        <div className="htc-post-page py-6 flex">
+        <div className="py-6 flex">
 
-          <div className="page-main w-640px">
-            <div className="bg-gray-800 rounded overflow-hidden shadow-lg">
+          <div className="w-640px">
+            <div className="rounded overflow-hidden shadow-lg">
               <div className="p-4 flex items-center">
                 <div className="flex-grow">
                   <p className="text-base text-gray-200">{post.title}</p>
@@ -55,14 +55,14 @@ export default function PostPage(props: PostPageProps) {
                 <img
                   alt="avatar"
                   className="w-6 h-6 rounded-full"
-                  src="http://jisuowei.com/i/img/avatar.jpg"
+                  src="https://jisuowei.com/file/avatar.jpg"
                 />
                 <span className="ml-2 text-sm text-gray-400">Chisw</span>
                 <span className="ml-1 text-xs text-gray-600 text-right flex-grow">上传于 2019-11-12 15:36</span>
               </div>
             </div>
 
-            <div className="mt-5 p-4 bg-gray-800 rounded overflow-hidden shadow-lg">
+            <div className="mt-5 p-4 rounded overflow-hidden shadow-lg">
               <TextArea
                 fill
                 growVertically
@@ -103,7 +103,7 @@ export default function PostPage(props: PostPageProps) {
                           2019-11-23 23:09
                         </span>
                       </div>
-                      <div className="p-3 flex-grow bg-gray-800 rounded-lg" style={{ borderTopLeftRadius: 0 }}>
+                      <div className="p-3 flex-grow rounded-lg" style={{ borderTopLeftRadius: 0 }}>
                         <div className="text-xs text-gray-300">
                           哇，好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久好久以前的照片哦
                         </div>
