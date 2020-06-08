@@ -1,0 +1,13 @@
+@keyframes animation-flow {
+  from {
+    background: linear-gradient(0deg, cyan, purple);
+  }
+
+  to {
+    background: linear-gradient(180deg, cyan, purple);
+  }
+}
+
+.animation-flow {
+  animation: animation-flow linear 10s infinite;
+}

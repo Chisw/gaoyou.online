@@ -13,7 +13,10 @@ export default function Center(props: CenterProps) {
   } = props
   
   return (
-    <div className={`${className} px-6 md:px-12 lg:px-20 xl:px-24 relative mx-auto`}>
+    <div
+      className={`${className} px-6 md:px-12 lg:px-20 xl:px-24 relative mx-auto`}
+      style={{ maxWidth: 1920 }}
+    >
       {children}
     </div>
   )
